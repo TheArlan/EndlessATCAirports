@@ -1,0 +1,913 @@
+[airspace]
+elevation = 15
+floor = 3000
+descentaltitude = 23000
+ceiling = 24500
+transitionaltitude = 18000
+usa = false
+metric = false
+letters = 10000
+name = Barranquilla North Approach, Barranquilla North Approach
+center = N10.615, W74.827, 
+
+beacons =
+	BAQ, N10.79670, W74.86030, 0, Barranquilla
+	STA, N10.96450, W74.23840, 0, Santa Marta
+	CTG, N10.20920, W75.50670, 0, Cartagena
+        CTR, N10.615, W74.827, 
+        SUR, N9.500, W74.635, 0, SUR
+ 
+
+
+boundary =
+        N11.56389, W074.06333
+        N10.09722, W074.01333
+        N09.49694, W074.63194
+        N09.50333, W076.37667
+        N10.74167, W076.36611
+        N11.68444, W075.40750
+
+handoff =
+        360, Barranquilla North Control, Barranquilla North Control, 128.4
+        050, Barranquilla North Control, Barranquilla North Control, 128.4
+        090, Barranquilla North Control, Barranquilla North Control, 128.4
+        270, Barranquilla North Control, Barranquilla North Control, 128.4
+        180, Barranquilla South Control, Barranquilla South Control, 124.2
+        120, Barranquilla South Control, Barranquilla South Control, 124.2
+        
+
+
+line1 =
+	N11.27148, W73.67690
+	N11.27568, W73.79570
+	N11.30889, W73.90957
+	N11.34062, W74.05913
+	N11.32085, W74.14292
+	N11.26572, W74.20020
+	N11.10532, W74.21914
+	N10.95225, W74.29995
+	N10.81372, W74.35020
+	N10.76523, W74.40088
+	N10.78706, W74.46025
+	N10.86250, W74.51626
+	N10.93447, W74.49229
+	N10.96719, W74.40957
+	N10.97466, W74.35239
+	N10.99668, W74.33022
+	N10.98906, W74.45425
+	N11.10972, W74.84458
+	N11.05757, W74.92158
+	N10.87041, W75.12305
+	N10.78325, W75.24795
+	N10.72720, W75.28062
+	N10.61089, W75.44600
+	N10.52764, W75.49277
+	N10.32773, W75.55371
+	N10.19634, W75.67090
+	N10.14341, W75.70835
+	N10.17217, W75.64219
+	N10.23643, W75.55840
+	N10.20518, W75.53857
+	N10.12583, W75.59590
+	N9.99272, W75.59268
+
+line2 =
+	N9.90870, W74.85974
+	N9.98642, W74.82290
+	N10.06034, W74.84031
+	N10.13049, W74.91204
+	N10.27545, W74.89240
+	N10.49517, W74.78145
+	N10.68353, W74.72667
+	N10.84058, W74.72807
+	N10.97230, W74.76135
+	N11.10971, W74.84457
+
+[airport1]
+name = Ernesto Cortissoz International Airport, Ernesto Cortissoz International
+code = SKBQ
+runways =
+	SKBQ_05_23, 05, N10.8792, W74.7897, 046.0, 9842, 200, 500, 95, 3, 041.0, 0, 0, 0, 0, 0, 0, 118.1, Ernesto Cortissoz Tower
+
+
+entrypoints  =
+             360, BAQ
+             340, BAQ
+             180, BAQ
+             190, BAQ
+             200, BAQ
+             250, BAQ
+             300, BAQ
+             040, BAQ
+             
+  
+airlines =
+         AVA, 7, a320, avianca, s
+         AVA, 1, a319, avianca, s
+         ARE, 4, a320, lan colombia, s
+         ARE, 1, a319, lan colombia, s
+         VVC, 1.5, a320, viva colombia, s
+         NKS, 1, a20n, spiritwings, n
+         NKS, 0.4, a320, spiritwings, n
+         AAL, 1, a319/b738, american, n
+         CMP, 0.7, b738, copa, w
+         ARU, 0.3, crj2, aruba, n
+         KRE, 0.5, b722/b732/b733, aerosucre, s
+         ACL, 0.3, b734/an26/an32, aercaribe, s
+         LAU, 0.3, b721/b722/b733/b734, suramericano, s
+         EZR, 0.3, b190/sf34, easyway, n
+         LAE, 0.3, b763, lanco, ns
+         EFY, 0.3, at72/at46, easyfly, s
+         GCA, 0.3, b734, grancolombia, s
+         RPB, 0.3, b738, aerorepublica, w
+         TPA, 0.3, a332, tampa, ns
+         N620AS-, 0.1, E55P, november620alphasierra, nsw
+         N900LS-, 0.1, GLF4, november900limasierra, nsw
+         N650PJ-, 0.1, C500, november650papajuliet, nsw
+         FAC5760-, 0.1, C560, colombianairforce5760, ns
+         FAC1271-, 0.1, E110, colombianairforce1271, s
+         FAC5746-, 0.1, B350, colombianairforce5746, s
+         FAC5750-, 0.1, B350, colombianairforce5750, ns
+         FAC5198-, 0.1, AC95, colombianairforce5198, s
+         FAC1014-, 0.1, C130, colombianairforce1014, ns
+         FAC1203-, 0.1, B722, colombianairforce1203, ns
+         FAC1202-, 0.1, B762, colombianairforce1202, ns
+         
+
+climbaltitude =
+             13000
+
+[airport2]
+name = Ernesto Cortissoz International Airport, Errnesto Cortissoz International
+code = B1
+runways =
+	SKBQ_05_23GA, 05, N10.8792, W74.7897, 046.0, 9842, 200, 500, 95, 3, 041.0, 0, 0, 0, 0, 0, 0, 118.1, Ernesto Cortissoz Tower
+
+flow = 1
+inboundbeacon = BAQ
+entrypoints =
+             120, BAQ, 7000
+             140, BAQ, 7000
+             160, BAQ, 7000
+             180, BAQ, 7000
+             200, BAQ, 7000
+             220, BAQ, 7000
+ 
+airlines =
+          HK4845G-, 1, P28A, hotelkilo4845golf, s
+          HK5166G-, 1, C172, hotelkilo5166golf, s
+          HK5179G-, 1, P28A, hotelkilo5179golf, s
+          HK1460G-, 1, C152, hotelkilo1460golf, s
+          HK4998G-, 1, P28A, hotelkilo4998golf, s
+          FAC3109-, 1, A29B, colombianairforce3109, s
+          FAC2184-, 1, A37B, colombianairforce2184, s
+          FAC5055-, 1, C208, colombianairforce5055, s
+ 
+climbaltitude = 2000
+
+[airport3]
+name = Rafael Nunez International Airport, Rafael Nunez International
+code = CG
+ 
+runways =
+	SKCG_01_19, 01, N10.43086, W075.51338, 008.0, 7841, 60, 185, 7, 3, 0, 0, 0, 0, 0, 0, 0, 118.3, Rafael Nunez Tower
+ 
+flow = 14
+inboundbeacon = CTG
+entrypoints =
+             330, CTG,
+             310, CTG,
+             180, CTG, 18000,
+             210, CTG, 18000, 
+             220, CTG, 18000,
+             260, CTG, 18000, 
+             280, CTG, 18000, 
+  
+airlines =
+         AVA, 5, a320, avianca, s
+         AVA, 1, a319, avianca, s
+         AVA, 0.4, a20n, avianca, s
+         VVC, 4, a320, viva colombia , s
+         VVC, 1, a20n, viva colombia , s
+         ARE, 4, a320, lan colombia, s
+         ARE, 1, a319, lan colombia, s
+         AAL, 0.7, a319/b378, american, n
+         NKS, 0.7, a321, spiritwings, n
+         JBU, 0.5, a321/e190, jetblue, n
+         EFY, 0.5, at72/at46, easyfly, s
+         CMP, 0.3, b738, copa, w
+         KLM, 0.3, b789/b77w, KLM, ns
+         GCA, 0.3, b738, grancolombia, s
+         LAU, 0.3, b721/b722/b733/b734, suramericano, s
+         N282GS-, 0.1, E55P, november282golfsierra, nsw
+         N548GL-, 0.1, B350, november548golflima, nsw
+         N143LJ-, 0.1, LJ55, november143limajuliet, nsw
+         FAC5733-, 0.1, B350, colombianairforce5733, s
+         FAC5570-, 0.1, B350, colombianairforce5570, ns
+         FAC5727-, 0.1, B350, colombianairforce5727, s
+         FAC1215-, 0.1, E135, colombianairforce1215, s
+         FAC1216-, 0.1, LJ60, colombianairforce1216, s
+         FAC1203-, 0.1, B722, colombianairforce1203, ns 
+ 
+climbaltitude =
+             13000
+ 
+[airport4]
+name = Rafael Nunez International Airport, Rafael Nunez International
+code = C1
+ 
+runways =
+	SKCG_01_19GA, 01, N10.43086, W075.51338, 008.0, 7841, 60, 185, 7, 3, 0, 0, 0, 0, 0, 0, 0, 118.3, Rafael Nunez Tower
+flow = 1
+inboundbeacon = CTG
+entrypoints =
+             120, CTG, 7000
+             140, CTG, 7000
+             160, CTG, 7000
+             180, CTG, 7000
+             200, CTG, 7000
+ 
+airlines =
+          HK5078G-, 0.1, PA34, hotelkilo5078golf, s
+          HK5309G-, 0.1, P28A, hotelkilo5309golf, s
+          EJC1120-, 0.1, C208, colombianarmy1120, s
+ 
+climbaltitude = 2500
+
+[airport5]
+name = Simon Bolivar International Airport, Simon Bolivar International
+code = SM
+ 
+runways =
+	SKSM_01_19, 01, N11.1120, W74.2141, 006.0, 5576, 235, 105, 8, 0, 0, 0, 0, 0, 0, 0, 0, 118.7, Simon Bolivar Tower
+ 
+flow = 7
+inboundbeacon = STA
+entrypoints =  
+             140, STA
+             170, STA
+             180, STA
+ 
+airlines = 
+         VVC, 8, a320, viva colombia, s
+         AVA, 7, a320, avianca, s
+         ARE, 4, a320, lan colombia, s
+         RPB, 0.3, b738, aerorepublica, s
+         KRE, 0.3, b722/b732/b733, aerosucre, s
+         LAU, 0.3, b721/b722/b733/b734, suramericano, s
+         N967TG-, 0.1, C25A, november967tangogolf, nsw
+         FAC1216-, 0.1, LJ60, colombianairforce1216, s
+         FAC5625-, 0.1, B350, colombianairforce5625, s
+         FAC5601-, 0.1, AC95, colombianairforce5601, s
+         FAC1215-, 0.1, E135, colombianairforce1215, s
+         FAC5553-, 0.1, AC95, colombianairforce5553, s
+         FAC5743-, 0.1, PAY3, colombianairforce5743, s
+ 
+ 
+climbaltitude = 13000
+ 
+[airport6]
+name = Simon Bolivar International Airport, Simon Bolivar International
+code = S1
+ 
+runways =
+	SKSM_01_19GA, 01, N11.1119, W74.2140, 006.0, 5576, 235, 105, 8, 0, 0, 0, 0, 0, 0, 0, 0, 118.7, Simon Bolivar Tower
+ 
+flow = 1
+inboundbeacon = STA
+entrypoints =  
+             180, STA, 7000
+             160, STA, 7000
+             140, STA, 7000
+ 
+airlines =
+          HK4666G-, 0.1, P28A, hotelkilo4666golf, s
+          HK5165G-, 0.1, C172, hotelkilo5165golf, s
+ 
+climbaltitude = 1500
+          
+
+[area1]
+shape = polygon		
+altitude = 7000
+name = S1		
+draw = 0		
+labelpos = N11.062, W74.149
+points =
+	N11.134, W74.232, 
+        N11.180, W74.140, 
+        N10.985, W74.070, 
+        N10.958, W74.170, 
+
+[area2]
+shape = polygon		
+altitude = 8000
+name = SM2		
+draw = 0		
+labelpos = N10.923, W74.109, 
+points =
+        N10.958, W74.170,
+        N10.865, W74.153, D42 090
+        N10.877, W74.052, D48 090
+        N10.985, W74.070, 
+
+[area3]
+shape = polygon		
+altitude = 10000
+name = SM3		
+draw = 0		
+labelpos = N10.784, W74.094,
+points =
+        N10.865, W74.153, D42 090
+        N10.879, W74.040, D48 090
+        N10.668, W74.033, D48 104 
+        N10.698, W74.157, D42 104
+
+[area4]
+shape = polygon		
+altitude = 7000
+name = SM4		
+draw = 0		
+labelpos = N10.492, W74.105, 
+points =
+        N10.698, W74.157, D42 104
+        N10.418, W74.263, D42 128
+        N10.255, W74.019, D60 128
+        N10.668, W74.033, D48 104 
+
+[area5]
+shape = polygon		
+altitude = 3200
+name = BQ1		
+draw = 0		
+labelpos = N10.603, W75.151, 
+points =
+        N10.671, W74.972, D10 R227
+        N10.334, W75.273, D37 R227
+        N10.498, W75.409, D37 R247
+        N10.558, W75.303, D30 R247
+        N10.619, W75.336, D30 R255
+        N10.683, W75.179, D20 R255
+        N10.767, W75.197, D20 R270
+        N10.877, W75.190, D20 R289
+        N10.835, W75.025, D10 R288
+
+[area6]
+shape = polygon		
+altitude = 4000
+name = CG1		
+draw = 0		
+labelpos = N9.819, W75.341, 
+points =
+        N10.118, W75.098, D43 R205
+        N9.501, W75.300, D80 R204
+        N9.525, W75.745, D92 R220
+        N10.206, W75.277, D43 R220
+        N10.151, W75.192, D43 R212
+
+[configurations]
+config1 =
+        0, SKBQ_05_23, startland
+        0, SKBQ_05_23GA, startland
+        0, SKCG_01_19, startland
+        0, SKCG_01_19GA, startland
+        0, SKSM_01_19, startlandtrack
+        0, SKSM_01_19GA, startland
+                
+config2 =
+        0, SKBQ_05_23, startland
+        0, SKBQ_05_23GA, startland
+        0, SKCG_01_19, startland
+        0, SKCG_01_19GA, startland
+        0, SKSM_01_19, startlandtrack
+        0, SKSM_01_19GA, startland
+         
+[departure1]
+runway = SKBQ_05_23	
+route1 = 
+	TIGR1A, TIGRO 1 ALPHA
+        N10.921, W74.749, 10D R047 TIGRO
+        N11.57694, W074.06694,
+
+route2 =
+        ENTI1C, ENTIP 1 CHARLIE
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N11.15444, W074.19111
+
+route3 =
+        STA, SANTAMARTA 3 CHARLIE
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N10.835, W74.695, D10 R082 STA
+        N10.96450, W74.23840
+
+route4 =
+        VUMB1B, VUMBA 1 BRAVO
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N10.835, W74.695, D10 R082 STA
+        N10.789, W74.692, D10 R098 VUMBA
+        N10.78472, W074.30250
+
+route5 = 
+        EGOK1B, EGOKU 1 BRAVO
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N10.835, W74.695, D10 R082 STA
+        N10.789, W74.692, D10 R098 VUMBA
+        N10.746, W74.697, D10 R113 EGOKU
+        N10.65361, W074.36028
+         
+
+route6 =
+        UMKI1B, UMKIR 1 BRAVO
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N10.835, W74.695, D10 R082 STA
+        N10.789, W74.692, D10 R098 VUMBA
+        N10.746, W74.697, D10 R113 EGOKU
+        N10.713, W74.714, D10 R126 UMKIR
+        N10.44389, W074.43417,
+
+route7 =
+        DARN2B, DARNI 2 BRAVO
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N10.835, W74.695, D10 R082 STA
+        N10.789, W74.692, D10 R098 VUMBA
+        N10.746, W74.697, D10 R113 EGOKU
+        N10.713, W74.714, D10 R126 UMKIR
+        N10.645, W74.784, D10 R159 DARNI
+        N10.15722, W074.54139,
+
+route8 = 
+        ISOT2B, ISOTO 2 BRAVO
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N10.835, W74.695, D10 R082 STA
+        N10.789, W74.692, D10 R098 VUMBA
+        N10.746, W74.697, D10 R113 EGOKU
+        N10.713, W74.714, D10 R126 UMKIR
+        N10.645, W74.784, D10 R160 DARNI
+        N10.632, W74.821, D10 R172 ISOTO 
+        N09.91722, W074.62444
+
+route9 = 
+        VOVL1B, VOVLU 1 BRAVO
+        N10.921, W74.749, D10 R047 TIGRO
+        N10.872, W74.708, D10 R069 ENTIP
+        N10.835, W74.695, D10 R082 STA
+        N10.789, W74.692, D10 R098 VUMBA
+        N10.746, W74.697, D10 R113 EGOKU
+        N10.713, W74.714, D10 R126 UMKIR
+        N10.645, W74.784, D10 R160 DARNI
+        N10.632, W74.821, D10 R172 ISOTO 
+        N10.626, W74.867, D10 R187 VOVLU
+        N09.51056, W074.85972
+
+route10 = 
+         UGRE1A, UGREB 1 ALPHA
+         N10.921, W74.749, D10 R047 TIGRO
+         N10.872, W74.708, D10 R069 ENTIP
+         N10.835, W74.695, D10 R082 STA
+         N10.789, W74.692, D10 R098 VUMBA
+         N10.746, W74.697, D10 R113 EGOKU
+         N10.713, W74.714, D10 R126 UMKIR
+         N10.645, W74.784, D10 R160 DARNI
+         N10.632, W74.821, D10 R172 ISOTO 
+         N10.626, W74.867, D10 R187 VOVLU
+         N10.634, W74.913, D10 R203 UGREB
+         N09.73861, W075.16722
+
+route11 = 
+         UGSO1A, USGOL 1 ALPHA
+         N10.921, W74.749, D10 R047 TIGRO
+         N10.872, W74.708, D10 R069 ENTIP
+         N10.835, W74.695, D10 R082 STA
+         N10.789, W74.692, D10 R098 VUMBA
+         N10.746, W74.697, D10 R113 EGOKU
+         N10.713, W74.714, D10 R126 UMKIR
+         N10.645, W74.784, D10 R160 DARNI
+         N10.632, W74.821, D10 R172 ISOTO 
+         N10.626, W74.867, D10 R187 VOVLU
+         N10.634, W74.913, D10 R203 UGREB
+         N10.648, W74.937, D10 R212 UGSOL
+         N09.72556, W075.39028
+
+route12 = 
+         EDRE2A, EDRES 2 ALPHA
+         N10.947, W74.726, D12 R047 INT
+         N10.989, W74.812, D12 R019 EDRES
+         N11.62333, W074.69111
+
+route13 =
+         MORG2C, MORGI 2 CHARLIE
+         N10.947, W74.726, D12 R047 INT
+         N10.989, W74.812, D12 R019 EDRES
+         N10.989, W74.904, D12 R353 MORGI
+         N11.66083, W075.08361
+
+route14 =
+         KAKU1A, KAKUD 1 ALPHA
+         N10.947, W74.726, D12 R047 INT
+         N10.989, W74.812, D12 R019 EDRES
+         N10.989, W74.904, D12 R353 MORGI
+         N10.980, W74.941, D12 R342 KAKUD
+         N11.67861, W075.28111
+
+route15 =
+         VARO2D, VARON 2 DELTA
+         N10.947, W74.726, D12 R047 INT
+         N10.989, W74.812, D12 R019 EDRES
+         N10.989, W74.904, D12 R353 MORGI
+         N10.980, W74.941, D12 R342 KAKUD
+         N10.854, W75.054, D12 R292 VARON
+         N11.04028, W075.75139
+
+route16 =
+         BAQ1F, BARRANQUILLA 1 FOXTROT
+         N10.947, W74.726, D12 R047 INT
+         N10.996, W74.834, D12 R012 INT
+         N10.79670, W74.86030
+
+route17 =
+         OTAM1A, OTAMO 1 ALPHA
+         N10.97139, W074.71778, SAVRI
+         N15.00000, W075.97167
+
+route18 = 
+         NINL1A, NINLO 1 ALPHA
+         N10.97139, W074.71778, SAVRI
+         N10.91528, W074.65750, NINLO
+         N08.05472, W073.88889, LOKOV
+
+route19 =
+         NINL1B, NINLO 1 BRAVO
+         N10.97139, W074.71778, SAVRI
+         N10.91528, W074.65750, NINLO
+         N07.69222, W074.76028, UGALU
+
+route20 =
+         BAQ1H, BARRANQUILLA 1 HOTEL
+         N10.95056, W074.72889, BQ900
+
+route21 =
+         CTG2E, CARTAGENA 2 ECHO
+         N10.947, W74.726, D12 R047 INT
+         N10.989, W74.812, D12 R019 EDRES INT
+         N10.989, W74.904, D12 R353 MORGI INT
+         N10.980, W74.941, D12 R342 KAKUD INT 
+         N10.854, W75.054, D12 R292 VARON INT
+         N10.666, W75.015, D12 R235 CTG INT
+         N10.20920, W75.50670
+
+[departure2]
+runway = SKBQ_05_23, rev
+route1 = 
+        BAQ1I, BARRANQUILLA 1 INDIA
+        N10.82889, W074.83278, BQ901
+
+
+[departure3]
+runway = SKBQ_05_23GA
+route1 = 
+        SLMANCA, SALAMANCA 1
+        N11.02306, W074.62500, SALAMANCA
+        N11.00889, W074.26167, CIENAGA
+
+route2 = 
+        SBGRD1A, SABANAGRANDE 1 ALPHA
+        N10.79250, W074.75806, SABANAGRANDE
+        N10.25583, W074.34917, ARJONA
+
+route3 =
+        SBGRD1B, SABANAGRANDE 1 BRAVO
+        N10.79250, W074.75806, SABANAGRANDE
+        N10.25417, W074.91444, CALAMAR
+        
+route4 =
+        SBGRD1C, SABANAGRANDE 1 CHARLIE
+        N10.79250, W074.75806, SABANAGRANDE      
+        N10.52417, W074.18333, FUNDACION
+route5 =
+        SBGRD1D, SABANAGRANDE 1 DELTA
+        N10.79250, W074.75806, SABANAGRANDE
+        N09.97306, W073.88639, BOSCONIA´
+
+route6 =
+        PRTOCOL, PUERTO COLOMBIA 1
+        N10.98444, W074.95611, PUERTO COLOMBIA
+        N10.56833, W075.32556, CLEMENCIA
+        N10.53583, W075.39694, BAYUNCA
+        
+[departure4]
+runway = SKBQ_05_23GA, rev
+route1 = 
+        SLMANCA, SALAMANCA 1
+        N11.02306, W074.62500, SALAMANCA
+        N11.00889, W074.26167, CIENAGA
+
+route2 = 
+        SBGRD1A, SABANAGRANDE 1 ALPHA
+        N10.79250, W074.75806, SABANAGRANDE
+        N10.25583, W074.34917, ARJONA
+
+route3 =
+        SBGRD1B, SABANAGRANDE 1 BRAVO
+        N10.79250, W074.75806, SABANAGRANDE
+        N10.25417, W074.91444, CALAMAR
+        
+route4 =
+        SBGRD1C, SABANAGRANDE 1 CHARLIE
+        N10.79250, W074.75806, SABANAGRANDE      
+        N10.52417, W074.18333, FUNDACION
+route5 =
+        SBGRD1D, SABANAGRANDE 1 DELTA
+        N10.79250, W074.75806, SABANAGRANDE
+        N09.97306, W073.88639, BOSCONIA´
+
+route6 =
+        PRTOCOL, PUERTO COLOMBIA 1
+        N10.98444, W074.95611, PUERTO COLOMBIA
+        N10.56833, W075.32556, CLEMENCIA
+        N10.53583, W075.39694, BAYUNCA
+
+[departure5]
+runway = SKCG_01_19
+route1 =
+        IRAX1A, IRAXU 1 ALPHA
+        N10.495, W75.505, D17 R012
+        N10.458, W75.649, D17 R335
+        N10.305, W75.774, D17 R296
+        N10.088, W75.768, D17 R250
+        N09.931, W75.573, D17 R199
+        N09.50389, W075.66444
+
+route2 =
+        KOPG1A, KOPGI 1 ALPHA
+        N10.495, W75.505, D17 R012
+        N10.457, W75.651, D17 R252 INT
+        N10.339, W75.763, D17 R303 INT
+        N10.54972, W076.36972
+
+route3 =
+        BAQ2A, BARRANQUILLA 2 ALPHA
+        N10.528, W75.499, D17 R010 INT
+        N10.79670, W74.86030
+
+route4 =
+        CTG2D, CARTAGENA 2 DELTA
+        N10.528, W75.499, D17 R010 INT
+        N10.524, W75.578, D17 R353 INT
+        N10.20920, W75.50670
+
+route5 =
+        VARO1A, VARON 1 ALPHA
+        N10.53278, W075.51583, CG900
+        N11.04028, W075.75139
+
+route6 =
+        ILMI1A, ILMIK 1 ALPHA
+        N10.49806, W075.51861, CG901
+        N10.40583, W075.44778, ILMIK
+        N09.508, W75.342, UGALU 
+
+route7 = 
+        ILMI1B, ILMIK 1 BRAVO
+        N10.49806, W075.51861, CG901
+        N10.40583, W075.44778, ILMIK
+        N09.507, W75.738, AKPEK
+
+route8 =
+        ESKA1A, ESKAB 1 ALPHA
+        N10.49806, W075.51861, CG901
+        N10.43417, W075.62028, ESKAB
+        N09.507, W75.738, LIMIT AKPEK
+
+route9 =
+        ESKA1B, ESKAB 1 BRAVO
+        N10.49806, W075.51861, CG901
+        N10.43417, W075.62028, ESKAB
+        N09.508, W75.342, UGALU
+
+[departure6]
+
+runway = SKCG_01_19, rev
+route1 =
+        CTG1B, CARTAGENA 1 BRAVO
+        N10.20920, W75.50670
+
+[departure7]
+runway = SKCG_01_19GA, 
+route1 =
+        BAYNCA1, BAYUNCA 1 
+        N10.53583, W075.39694, BAYUNCA
+        N10.56833, W075.32556, CLEMENCIA
+
+route2 =
+        ARJONA1, ARJONA 1
+        N10.32694, W075.40556, TURBACO
+        N10.25583, W074.34917, ARJONA
+
+route3 =
+        BOCHCA1, BOCACHICA 1
+        N10.31389, W075.66167, BOCACHICA
+
+[departure8]
+runway = SKCG_01_19GA, rev
+route1 =
+        BAYNCA1, BAYUNCA 1 
+        N10.53583, W075.39694, BAYUNCA
+        N10.56833, W075.32556, CLEMENCIA
+
+route2 =
+        ARJONA1, ARJONA 1
+        N10.32694, W075.40556, TURBACO
+        N10.25583, W074.34917, ARJONA
+      
+[departure9]
+runway = SKSM_01_19
+route1 = 
+         BAQ4C, BARRANQUILLA 4 CHARLIE
+         N10.93750, W074.42200, D11 R27O
+         N10.79670, W074.86030,
+
+route2 =
+         MGN3C, MANANGUE 3 CHARLIE
+         N10.93750, W074.42200, D11 R270
+         N9.287410, W074.847198,
+
+route3 =
+         SUPL1A, SUPLI 1 ALPHA
+         N10.96200, W74.33617, SUPLI
+         N07.68250, W74.74950,
+
+route4 =
+         SUPL1C, SUPLI 1 CHARLIE
+         N10.96200, W74.33617, SUPLI
+         N08.34617, W73.88683
+
+[departure10]
+runway = SKSM_01_19, rev
+route1 = 
+        MGN2D, MANANGUE 2 DELTA
+        N10.96450, W74.23840, STA
+        N9.287410, W074.847198,
+
+route2 =
+        EDVA1B, EDVAR 1 BRAVO
+        N10.96450, W074.23840, STA
+        N10.10722, W074.00023
+
+route3 =
+        SUPL1B, SUPLI 1 BRAVO
+        N10.96200, W74.33617, SUPLI
+        N08.34617, W73.88683
+
+route4 =
+        SUPL1D, SUPLI 1 DELTA
+        N10.96200, W74.33617, SUPLI
+        N07.68250, W74.74950,
+
+[departure11]
+runway = SKSM_01_19GA
+route1 =
+        TSAJRAA, TASAJERA ALPHA
+        N10.96667, W074.33333, TASAJERA
+        N11.02306, W074.62500, SALAMANCA
+
+route2 = 
+        TSAJRAB, TASAJERA BRAVO
+        N10.96667, W074.33333, TASAJERA
+        N10.63333, W074.61667, PIVIJAY
+
+route3 =
+        TSAJRAC, TASAJERA CHARLIE
+        N10.96667, W074.33333, TASAJERA
+        N10.60000, W074.18333, ARACATACA
+
+route4 =
+        TAGANGA, TAGANGA
+        N11.26667, W074.18333, TAGANGA
+        N11.336, W74.076, D24 R023 INT
+        N11.24694, W073.54889, PALOMINO
+
+[departure12]
+runway = SKSM_01_19GA, rev
+route1 =
+        TSAJRAA, TASAJERA ALPHA
+        N10.96667, W074.33333, TASAJERA
+        N11.02306, W074.62500, SALAMANCA
+
+route2 = 
+        TSAJRAB, TASAJERA BRAVO
+        N10.96667, W074.33333, TASAJERA
+        N10.63333, W074.61667, PIVIJAY
+
+route3 =
+        TSAJRAC, TASAJERA CHARLIE
+        N10.96667, W074.33333, TASAJERA
+        N10.60000, W074.18333, ARACATACA
+
+route4 =
+        TAGANGA, TAGANGA
+        N11.26667, W074.18333, TAGANGA
+        N11.336, W74.076, D24 R023 INT
+        N11.24694, W073.54889, PALOMINO
+        
+
+[planetypes]
+types =
+       pa42, 5, 160, 250, 2.6, 3.0, 1440, 1560, 131, 144, 1.2, 1.3
+       ac95, 5, 160, 250, 2.6, 3.0, 1440, 1560, 131, 144, 1.2, 1.3
+       an26, 5, 160, 240, 2.9, 3.2, 1440, 1560, 120, 131, 1.1, 1.3
+       an32, 5, 160, 270, 2.9, 3.2, 1440, 1560, 120, 131, 1.1, 1.3
+       a29b, 5, 140, 270, 2.8, 3.2, 1400, 1800, 100, 140, 1.2, 1.5
+       a37b, 6, 130, 300, 2.9, 3.2, 1440, 1560, 100, 110, 1.1, 1.3
+       b721, 4, 160, 300, 2.9, 3.2, 1440, 1560, 131, 144, 1.1, 1.3
+       b722, 4, 160, 300, 2.9, 3.2, 1440, 1560, 131, 144, 1.1, 1.3
+	A306, 3, 160, 300, 2.3, 2.7, 1000, 1440, 120, 130, 1.1, 1.3
+	J328, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	E45X, 5, 160, 300, 2.9, 3.2, 1440, 1560, 116, 125, 1.1, 1.3
+	GALX, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	G150, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	G250, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	ASTR, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	BE40, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	BE4W, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	F2TH, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	HDJT, 6, 140, 300, 2.9, 3.2, 1440, 1560, 105, 115, 1.1, 1.3
+	PRM1, 6, 140, 300, 2.9, 3.2, 1440, 1560, 105, 115, 1.1, 1.3
+	WW23, 6, 140, 300, 2.9, 3.2, 1440, 1560, 105, 115, 1.1, 1.3
+	WW24, 6, 140, 300, 2.9, 3.2, 1440, 1560, 105, 115, 1.1, 1.3
+	JCOM, 6, 140, 300, 2.9, 3.2, 1440, 1560, 105, 115, 1.1, 1.3
+	HA4T, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	H25A, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	H25B, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	H25C, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	H25X, 5, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
+	PC24, 6, 130, 300, 2.9, 3.2, 1440, 1560, 90, 100, 1.1, 1.3
+	SF50, 6, 110, 300, 2.9, 3.2, 1440, 1560, 70, 100, 1.1, 1.3
+	B350, 6, 130, 300, 2.9, 3.2, 1440, 1560, 90, 110, 1.1, 1.3
+	PAT4, 6, 120, 300, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	EPIC, 6, 120, 300, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	EA50, 6, 110, 280, 2.9, 3.2, 1440, 1560, 70, 100, 1.1, 1.3
+	PC12, 6, 120, 280, 2.9, 3.2, 1440, 1560, 70, 100, 1.1, 1.3
+	TEX2, 6, 110, 280, 2.9, 3.2, 1440, 1560, 95, 105, 1.1, 1.3
+	PAY2, 6, 120, 280, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	C21T, 6, 120, 280, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	BE9T, 6, 110, 260, 2.9, 3.2, 1440, 1560, 83, 98, 1.1, 1.3
+	C425, 6, 100, 260, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	P46T, 6, 110, 250, 2.9, 3.2, 1440, 1560, 70, 100, 1.1, 1.3
+	C208, 6, 120, 250, 2.9, 3.2, 1440, 1560, 100, 115, 1.1, 1.3
+	AEST, 6, 110, 250, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	M600, 6, 110, 250, 2.9, 3.2, 1440, 1560, 70, 100, 1.1, 1.3
+	EVOT, 6, 110, 250, 2.9, 3.2, 1440, 1560, 70, 100, 1.1, 1.3
+	C02T, 6, 110, 250, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	C04T, 6, 110, 250, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	C14T, 6, 100, 250, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	M20T, 6, 100, 240, 2.9, 3.2, 1440, 1560, 60, 80, 1.1, 1.3
+	COL4, 6, 110, 240, 2.9, 3.2, 1440, 1560, 80, 90, 1.1, 1.3
+	B58T, 6, 100, 230, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	C402, 6, 100, 230, 2.9, 3.2, 1440, 1560, 60, 90, 1.1, 1.3
+	F406, 6, 110, 230, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	C303, 6, 100, 220, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	C10T, 6, 100, 220, 2.9, 3.2, 1440, 1560, 60, 90, 1.1, 1.3
+	PA46, 6, 100, 210, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	C06T, 6, 100, 200, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	C07T, 6, 100, 200, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	C337, 6, 100, 200, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	P337, 6, 100, 200, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	C210, 6, 100, 200, 2.9, 3.2, 1440, 1560, 60, 90, 1.1, 1.3
+	T210, 6, 100, 200, 2.9, 3.2, 1440, 1560, 60, 90, 1.1, 1.3
+	P210, 6, 100, 200, 2.9, 3.2, 1440, 1560, 60, 90, 1.1, 1.3
+	PA34, 6, 100, 200, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	S22T, 6, 100, 200, 2.9, 3.2, 1440, 1560, 80, 90, 1.1, 1.3
+	DA62, 6, 110, 200, 2.9, 3.2, 1440, 1560, 70, 100, 1.1, 1.3
+	BT36, 6, 100, 200, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	B36T, 6, 100, 200, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	C72R, 6, 100, 160, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	C77R, 6, 100, 160, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	P32R, 6, 100, 160, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	P32T, 6, 100, 180, 2.9, 3.2, 1000, 1400, 80, 100, 1.1, 1.3
+	C82R, 6, 100, 170, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	C82T, 6, 100, 170, 2.9, 3.2, 1000, 1440, 80, 100, 1.1, 1.3
+	C82S, 6, 100, 170, 2.9, 3.2, 1000, 1440, 80, 100, 1.1, 1.3
+	C172, 6, 100, 160, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	C177, 6, 100, 160, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	C206, 6, 100, 160, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	C182, 6, 100, 170, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	T206, 6, 100, 170, 2.9, 3.2, 1000, 1440, 80, 100, 1.1, 1.3
+	BE35, 6, 100, 180, 2.9, 3.2, 1440, 1560, 80, 100, 1.1, 1.3
+	DA42, 6, 100, 190, 2.9, 3.2, 1440, 1560, 70, 90, 1.1, 1.3
+	SR22, 6, 100, 180, 2.9, 3.2, 1440, 1560, 80, 90, 1.1, 1.3
+	PA30, 6, 100, 180, 2.9, 3.2, 1440, 1560, 80, 90, 1.1, 1.3
+	P28A, 6, 100, 160, 2.9, 3.2, 1000, 1300, 80, 90, 1.1, 1.3
+	P28B, 6, 100, 170, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	P28R, 6, 100, 170, 2.9, 3.2, 1000, 1300, 80, 100, 1.1, 1.3
+	P28U, 6, 100, 180, 2.9, 3.2, 1000, 1440, 80, 100, 1.1, 1.3
+	P28S, 6, 100, 180, 2.9, 3.2, 1000, 1440, 80, 100, 1.1, 1.3
+	P28T, 6, 100, 180, 2.9, 3.2, 1000, 1440, 80, 100, 1.1, 1.3
+	C208, 6, 110, 170, 2.8, 3.2, 800, 1200, 100, 110, 1.2, 1.3
+	C130, 4, 160, 300, 2.9, 3.2, 1440, 1560, 110, 120, 1.1, 1.3
