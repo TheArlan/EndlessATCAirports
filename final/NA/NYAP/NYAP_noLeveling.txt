@@ -51,6 +51,10 @@ beacons =
 	VALRE, N41.435328, W73.881736, 0, Valerie
 	NOBBI, N41.424, W73.6378, 0, Nobby
 	CMK, N41.28008889, W73.58132778, 0, Carmel
+	CRALY, 41°04.63'N, 73°37.56'W, -224, Cray Lee
+	PROUD, 40°37.79'N, 73°59.99'W, -045, Proud
+	DAMYR, 40°24.65'N, 74°13.88'W, -57, Dam Year
+	HARLM, 40°29.44'N, 74°44.95'W, 123, Harlem
 	
 handoff = 
 	340, LIBN, New York Departure, 118.17
@@ -1162,6 +1166,7 @@ runways =
 	04R_JK, 04R, N40.6254, W73.7703, 30.6, 8400, 0, 0, 13, 3, 0, 3, 0, 0, 0, 0, 0, 119.1, kennedy tower
 	13L_JK, 13L, N40.6578, W73.7902, 121.0, 10000, 0, 0, 13, 3, 0, 3, 0, 0, 0, 0, 0, 119.1, kennedy tower
 	13R_JK, 13R, N40.6484, W73.8167, 121.0, 14511, 0, 0, 13, 3, 0, 3, 0, 0, 0, 0, 0, 123.9, kennedy tower
+	13RB_JK, 13R, N40.6484, W73.8167, 121.0, 14511, 0, 0, 13, 3, 0, 3, 0, 0, 0, 0, 0, 123.9, kennedy tower
 	dummy_JK, 13R, S40.6484, E73.8167, 121.0, 14511, 0, 0, 13, 3, 0, 3, 0, 0, 0, 0, 0, 123.9, kennedy tower
 
 sids =
@@ -1217,8 +1222,7 @@ airlines =
 #Terminal 1
 	afl, 1, b773/a332/a333, aeroflot, e
 	cca, 1, b773/b748, air china, n
-	afr, 3, a388/b773/b789/a332, airfrans, e
-	afc, 1, conc, airfrans concorde, e
+	afr, 3, a388/b773/b789/a332/conc, airfrans, e
 	aza, 1, a332/b773, alitalia, e
 	aua, 1, b763, austrian, e
 	ahy, 1, b788, azal, e
@@ -1351,7 +1355,7 @@ airlines =
 	anz, 1, b789, new zealand, w
 #Private
 	fth, 1, c750, foothills
-	n-744hj, 2.75, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 2.75, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex
 	n-324ch, .25, b737
 	lxj, .25, e55p/glf4/cl35, flexjet
 	gaj, .25, b350/c56x/cl35, gama jet
@@ -1422,7 +1426,7 @@ airlines =
 	eja, 2, c56x/c680/glf4/glex/c68a/c700/cl30/cl60/e55p, exec jet
 	fth, 1, c750, foothills
 	cns, 2, pc12/pc24, chronos
-	n-744hj, 2, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 2, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex
 	dpj, 1, c25a/c25b/c560/c56x/c680/c750/cl30/cl35/cl60/e55p/fa7x/glf4/glf5/lj45/lj60/lj75, jet card
 	gaj, 2, b350/c56x, gama jet
 	ejm, 1, glf5/cl60, jet speed
@@ -1453,9 +1457,10 @@ traffic = 120
 climbaltitude = 2000
 
 airlines =
-	n-781pt, .75, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40
-	n-12345, .25, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40	
-
+	n-781pt, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-1234e, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-12345, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	
 #NYC Buildings 
 [area99]
 shape = polygon		; circle or polygon
@@ -2182,7 +2187,7 @@ airlines =
 	cks, 2, b744, connie
 	ups, 9, md11/b763, u p s
 #Private	
-	n-744hj, 4, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 4, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex
 	eja, 2, c56x/c680/glf4/glex/c68a/c700/cl30/cl60/e55p, exec jet
 	ejm, 0.5, glf5/cl60, jet speed
 	lxj, 0.5, e55p/glf4/cl35, flexjet
@@ -2253,7 +2258,7 @@ climbaltitude = 1500
 airlines =
 ####Regulars
 	eja, 20, c56x/c680/glf4/glex/c68a/c700/cl30/cl60/e55p, exec jet
-	n-744hj, 15, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 15, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex
 	gpd, 10, pc12, goodspeed, e
 	ejm, 10, glf5/cl60, jet speed
 	lxj, 10, e55p/glf4/cl35, flexjet
@@ -2275,8 +2280,8 @@ airlines =
 	wwi, 1, cl60, worldwide
 	rlj, 1, h25b/lj60, real jet, w	
 	pjc, 1, c25b, pittsburgh jet
-	c-abcd, 1, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th, n
-	pp-abc, 1, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th, s
+	c-abcd, 1, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex, n
+	pp-abc, 1, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex, s
 	hrt, 1, b350/c560/c56x/cl30/cl35/cl60/glex/lj45, chartright, n
 	tor, 1, be10/c550/e55p, homerun, n
 	vjt, 1, glex/cl35/cl60/gl5t/gl7t, vista jet, ne 
@@ -2299,8 +2304,8 @@ airlines =
 	xsr, 0.5, cl30/e55p, airshare
 	med, 0.5, pc12/lj35/be20/c560, med evac
 	mak1, 0.5, e50p, maklee one
-	xx-abc, 0.2, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th, s
-	xa-abc, 0.2, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th, s
+	xx-abc, 0.2, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex, s
+	xa-abc, 0.2, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex, s
 	qqe, 0.1, glf6, q rex, e
 
 entrypoints = 
@@ -2326,12 +2331,12 @@ airlines =
 	cns, 2, pc12, chronos
 ####Common
 	gpd, 5, pc12, goodspeed, e
-	n-600mm, 5, pc12/tbm7/m600	
+	n-600mm, 5, pc12/tbm8/m600/p46t/sf50	
 	mak1-, 3, e50p, mack lee one
 	mak2-, 3, m600, mack lee two	
 	n-123ad, 2, b350/sf50	
 ####Rare	
-	n-744hj, 0.5, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/lj35/lj60/glex/cl30/cl35/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/glex/lj75/glf6/e545/e55p/pc24
+	n-744hj, 0.5, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/p180/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx
 	eja, 0.1, c56x/c680/glf4/glex/c68a/c700/cl30/cl60/e55p, exec jet
 	dpj, 0.1, c25a/c25b/c560/c56x/c680/c750/cl30/cl35/cl60/e55p/fa7x/glf4/glf5/lj45/lj60/lj75, jet card
 	tek, 0.1, pc12, a tech, e
@@ -2372,10 +2377,9 @@ traffic = 120
 climbaltitude = 2000
 
 airlines =
-	n-781pt, 3, c152/c172/c182/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40
-	n-1234e, 1, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40
-	n-12345, 1, c152/c172/c182/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40
-	fto, 1, c208, wagner, e
+	n-781pt, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-1234e, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-12345, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40	fto, 1, c208, wagner, e
 
 sids = 
 	SBJ
@@ -2421,7 +2425,7 @@ sids =
 airlines =
 ####Regulars
 	eja, 10, c56x/c680/glf4/glex/c68a/c700/cl30/cl60/e55p, exec jet
-	n-744hj, 8, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 8, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex
 	lxj, 5, e55p/glf4/cl35, flexjet
 	skq, 3, pc12, skylab
 	gaj, 2, b350/c56x/cl35, gama jet
@@ -2466,9 +2470,9 @@ sids =
 	BDR, N41.09.38.54, W073.07.28.15, bridgeport
 	
 airlines =
-	n-781pt, 3, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40
-	n-1234e, 1, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40
-	n-12345, 1, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40
+	n-781pt, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-1234e, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-12345, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
 	
 entrypoints = 
 	297, MUGZY, 6000	
@@ -3429,7 +3433,7 @@ airlines =
 	wja, 1, b737/b738/b37m/b38m/b3xm, westjet, n
 #Private
 	fth, 0.25, c750, foothills
-	n-744hj, 0.6975, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 0.6975, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex
 	n-324ch, .25, b737
 	lxj, .0625, e55p/glf4/cl35, flexjet
 	gaj, .0625, b350/c56x/cl35, gama jet
@@ -3456,7 +3460,7 @@ airlines =
 	eja, 2, c680/glf4/glex/c68a/c700/cl30/cl60/e55p, execjet
 	fth, 1, c750, foothills
 	cns, 2, pc12/pc24, chronos
-	n-744hj, 2, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 2, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/e35l/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx/glf2/glf3/glf4/glf5/glf6/ga4c/ga5c/ga6c/ga7c/ga8c/gl5t/gl7t/glex
 	dpj, 1, c25a/c25b/c560/c56x/c680/c750/cl30/cl35/cl60/e55p/fa7x/glf4/glf5/lj45/lj60/lj75, jet card
 	gaj, 2, b350, gama jet
 	ejm, 1, glf5, jet speed
@@ -3504,9 +3508,10 @@ traffic = 120
 
 airlines =
 	kap, 5, c402/p212, care, ne
-	n-781pt, 3, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40/pc12
-	n-12345, 1, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40/pc12
-
+	n-781pt, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-1234e, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-12345, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	
 sids = 
 	DPK
 	SAX, N41.06750, W74.53830, Sparta
@@ -3547,7 +3552,7 @@ sids =
 	BAYYS, N41.17.11.556, W72.57.59.176, Bays
 	
 airlines =
-	n-744hj, 2, c525/c550/c56x/c680/c750/c25c/fa5x/fa7x/fa8x/f900/fa50/h25a/h25b/h25c/lj35/lj45/lj60/glex/cl30/cl35/gl50/g280/glf1/glf2/glf3/glf4/glf5/gl5t/gl7t/galx/lj75/glf6/e545/e55p/tbm7/pc12/pc24/m600/sf50/p46t/be40/be4w/hdjt/f2th
+	n-744hj, 2, tbm7/tbm8/tbm9/p46t/m600/pc12/pc24/sf50/be20/b350/be40/be4w/hdjt/c525/c550/c56x/c680/c750/c25a/c25b/c25c/ea50/e545/e550/e50p/e55p/p180/lj35/lj40/lj45/lj55/lj60/lj70/lj75/h25a/h25b/h25c/ha4t/f2th/fa5x/fa6x/fa7x/fa8x/f900/cl30/cl35/cl60/g150/g280/galx
 	rli, 1, c25b/b350, reliant air
 entrypoints = 
 	040, ALIXX, 4000
@@ -3570,9 +3575,10 @@ sids =
 	BDR, N41.09.38.54, W073.07.28.15, bridgeport
 
 airlines =
-	n-781pt, 0.675, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40/pc12
-	n-12345, 0.225, c152/c172/c182/c402/be36/be55/m20p/p28a/p28b/pa34/sr20/sr22/da20/da40/pc12
-
+	n-781pt, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-1234e, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	n-12345, 1, c152/c172/c182/be36/be55/be58/m20p/p28a/p28b/pa34/sr20/sr22/dv20/da40
+	
 entrypoints = 
 	004, NOBBI, 6000
 	000, VALRE, 3000
@@ -3623,11 +3629,15 @@ beacon = BEUTY
 route1 =
 	123, MIP4, mill ton four
 	N40.569197, W75.011478, 10000, 250
-	N40.490744, W74.749092
+	N40.490744, W74.749092, 10000
+	N40.490744, W74.749092, 9000
 	N40.481, W74.716
-	N40.427886, W74.540753
-	N40.465, W74.403
-	N40.522, W74.188
+	N40.427886, W74.540753, 9000
+	N40.427886, W74.540753, 8000
+	N40.465, W74.403, 8000
+	N40.465, W74.403, 7000
+	N40.522, W74.188, 7000
+	N40.522, W74.188, 4000
 	N40.556136, W74.062253
 	N40.629792, W73.999756
 	end, 045
@@ -3637,11 +3647,15 @@ runway = dummy_LG
 beacon = HARLM
 route1 =
 	123, MIP4, mill ton four
-	N40.490744, W74.749092
+	N40.490744, W74.749092, 10000
+	N40.490744, W74.749092, 9000
 	N40.481, W74.716
-	N40.427886, W74.540753
-	N40.465, W74.403
-	N40.522, W74.188
+	N40.427886, W74.540753, 9000
+	N40.427886, W74.540753, 8000
+	N40.465, W74.403, 8000
+	N40.465, W74.403, 7000
+	N40.522, W74.188, 7000
+	N40.522, W74.188, 4000
 	N40.556136, W74.062253
 	N40.629792, W73.999756
 	end, 045
@@ -3661,11 +3675,13 @@ beacon = KORRY
 route1 =
 	058, KORRY1, korry 1
 	N40.093842, W74.651544, 10000, 250
-	N40.202403, W74.495025
-	N40.289550, W74.385036
+	N40.202403, W74.495025, 8000, 250
+	N40.289550, W74.385036, 8000
+	N40.289550, W74.385036, 7000
 	N40.374872, W74.276972
 	40°24.65'N, 74°13.88'W
-	N40.466, W74.161
+	N40.466, W74.161, 7000
+	N40.466, W74.161, 4000
 	N40.518533, W74.094089
 	N40.556136, W74.062253
 	N40.629792, W73.999756
@@ -3673,15 +3689,16 @@ route1 =
 
 [approach205]
 runway = dummy_LG
-beacon = DEPDY
+beacon = WATJA
 route1 =
 	058, KORRY1, korry 1
-	N40.202403, W74.495025
-	N40.289550, W74.385036
-	N40.374872, W74.276972
+	N40.202403, W74.495025, 8000, 250
+	N40.289550, W74.385036, 8000
+	N40.289550, W74.385036, 7000
 	N40.374872, W74.276972
 	40°24.65'N, 74°13.88'W
-	N40.466, W74.161
+	N40.466, W74.161, 7000
+	N40.466, W74.161, 4000
 	N40.518533, W74.094089
 	N40.556136, W74.062253
 	N40.629792, W73.999756
@@ -3693,7 +3710,8 @@ beacon = DAMYR
 route1 =
 	058, KORRY1, korry 1
 	40°24.65'N, 74°13.88'W
-	N40.466, W74.161
+	N40.466, W74.161, 7000
+	N40.466, W74.161, 4000
 	N40.518533, W74.094089
 	N40.556136, W74.062253
 	N40.629792, W73.999756
@@ -3706,6 +3724,19 @@ beacon = IGN
 route1 =	
 	289, HAARP3, harp three
 	N41.66550, W73.82230
+	N41.435328, W73.881736
+	N41.343722, W73.798608, 8000
+	N41.194, W73.663
+	N41.116353, W73.593483
+	N41.077211, W73.626053
+	N40.783717, W73.868600
+	end, 224
+	
+[approach237]
+runway = dummy_LG
+beacon = VALRE
+route1 =	
+	289, HAARP3, harp three
 	N41.435328, W73.881736
 	N41.343722, W73.798608, 8000
 	N41.194, W73.663
@@ -3884,6 +3915,14 @@ route1 =
 	N41.1164, W73.5935
 	end
 
+#Departures
+[departure1]
+runway = 13RB_JK, rev
+route1 =
+	JFK5, Breezy Point Climb
+	N40°36.75', W73°53.67', 5000
+	N40°13.81', W74°12.34'
+
 #Additional Non-Active Airports
 #Optional Non-Active Airports
 [airport17]
@@ -4022,6 +4061,7 @@ runways =
 config1 =
 	0, 04L_JK, landstartrev, 220, nosid
 	0, 04R_JK, landrev
+	0, 13RB_JK, startrevintersection, 223
 	0, dummy_JK, landrev
 	0, 04L_JKP, landstartrev, 220, nosid
 	0, 04R_JKP, landrev
@@ -4033,18 +4073,18 @@ config1 =
 	0, 04_LG, landrev
 	0, 13_LG, startrev, 314, nosid	
 	0, dummy_LG, land
-	20, 19_TB, land
-	20, 24_TB, start, 283, nosid
-	30, 16_WC, landstart, 320, nosid
-	30, 16_WCP, landstart, 320, nosid
-	40, 01_RP, landstartrev, 220, nosid
-	40, 01_RPP, landstartrev, 220, nosid
-	40, 23_MU, landstart, 160, nosid
-	40, 23_MUP, landstart, 160, nosid
-	40, 22_CW, landstart, 180, nosid
-	40, 22_CWP, landstart, 180, nosid
-	40, 08_DB, landstart, 080, nosid	
-	40, 08_DBP, landstart, 080, nosid
+	0, 19_TB, land
+	0, 24_TB, start, 283, nosid
+	0, 16_WC, landstart, 320, nosid
+	0, 16_WCP, landstart, 320, nosid
+	0, 01_RP, landstartrev, 220, nosid
+	0, 01_RPP, landstartrev, 220, nosid
+	0, 23_MU, landstart, 160, nosid
+	0, 23_MUP, landstart, 160, nosid
+	0, 22_CW, landstart, 180, nosid
+	0, 22_CWP, landstart, 180, nosid
+	0, 08_DB, landstart, 080, nosid	
+	0, 08_DBP, landstart, 080, nosid
 	
 #Bravo Flow 
 config2 =
@@ -4061,18 +4101,18 @@ config2 =
 	0, 04_LG, landrev
 	0, 13_LG, startrev, 314, nosid	
 	0, dummy_LG, land			
-	20, 19_TB, land
-	20, 24_TB, start, 283, nosid
-	30, 16_WC, landstartrev, 295, nosid
-	30, 16_WCP, landstartrev, 295, nosid
-	40, 01_RP, landstartrev, 220, nosid
-	40, 01_RPP, landstartrev, 220, nosid
-	40, 23_MU, landstart, 160, nosid
-	40, 23_MUP, landstart, 160, nosid
-	40, 22_CW, landstart, 180, nosid
-	40, 22_CWP, landstart, 180, nosid
-	40, 08_DB, startrev, 260, nosid
-	40, 08_DBP, startrev, 260, nosid
+	0, 19_TB, land
+	0, 24_TB, start, 283, nosid
+	0, 16_WC, landstartrev, 295, nosid
+	0, 16_WCP, landstartrev, 295, nosid
+	0, 01_RP, landstartrev, 220, nosid
+	0, 01_RPP, landstartrev, 220, nosid
+	0, 23_MU, landstart, 160, nosid
+	0, 23_MUP, landstart, 160, nosid
+	0, 22_CW, landstart, 180, nosid
+	0, 22_CWP, landstart, 180, nosid
+	0, 08_DB, startrev, 260, nosid
+	0, 08_DBP, startrev, 260, nosid
 		
 #Charlie Flow
 config3 =
@@ -4089,17 +4129,17 @@ config3 =
 	0, 04_LG, landrev
 	0, 13_LG, startrev, 314, nosid
 	0, dummy_LG, land		
-	20, 24_TB, startland, 283, nosid
-	30, 16_WC, landstartrev, 295, nosid	
-	30, 16_WCP, landstartrev, 295, nosid	
-	40, 14_RP, landstartrev, 00, nosid	
-	40, 14_RPP, landstartrev, 00, nosid	
-	40, 23_MU, landstart, 160, nosid
-	40, 23_MUP, landstart, 160, nosid
-	40, 22_CW, landstart, 180, nosid
-	40, 22_CWP, landstart, 180, nosid
-	40, 08_DB, startrev, 260, nosid
-	40, 08_DBP, startrev, 260, nosid
+	0, 24_TB, startland, 283, nosid
+	0, 16_WC, landstartrev, 295, nosid	
+	0, 16_WCP, landstartrev, 295, nosid	
+	0, 14_RP, landstartrev, 00, nosid	
+	0, 14_RPP, landstartrev, 00, nosid	
+	0, 23_MU, landstart, 160, nosid
+	0, 23_MUP, landstart, 160, nosid
+	0, 22_CW, landstart, 180, nosid
+	0, 22_CWP, landstart, 180, nosid
+	0, 08_DB, startrev, 260, nosid
+	0, 08_DBP, startrev, 260, nosid
 	
 #Delta Flow	
 config4 =
@@ -4116,18 +4156,18 @@ config4 =
 	0, 04_LG, landrev
 	0, 13_LG, startrev, 314, nosid	
 	0, dummy_LG, land
-	20, 19_TB, startrev, 035, nosid
-	20, 24_TB, landrev
-	30, 16_WC, landstartrev, 320, nosid
-	30, 16_WCP, landstartrev, 320, nosid
-	40, 14_RP, landstartrev, 00, nosid	
-	40, 14_RPP, landstartrev, 00, nosid		
-	40, 22_CW, landstartrev, 360, nosid
-	40, 22_CWP, landstartrev, 360, nosid
-	40, 23_MU, landstartrev, 335, nosid
-	40, 23_MUP, landstartrev, 335, nosid
-	40, 08_DB, startrev, 260, nosid	
-	40, 08_DBP, startrev, 260, nosid	
+	0, 19_TB, startrev, 035, nosid
+	0, 24_TB, landrev
+	0, 16_WC, landstartrev, 320, nosid
+	0, 16_WCP, landstartrev, 320, nosid
+	0, 14_RP, landstartrev, 00, nosid	
+	0, 14_RPP, landstartrev, 00, nosid		
+	0, 22_CW, landstartrev, 360, nosid
+	0, 22_CWP, landstartrev, 360, nosid
+	0, 23_MU, landstartrev, 335, nosid
+	0, 23_MUP, landstartrev, 335, nosid
+	0, 08_DB, startrev, 260, nosid	
+	0, 08_DBP, startrev, 260, nosid	
 	
 #Echo Flow  
 config5 =
@@ -4144,18 +4184,18 @@ config5 =
 	0, 04_LG, start, 035, nosid
 	0, 13_LG, landrev
 	0, dummy_LG, land
-	20, 19_TB, startrev, 035, nosid
-	20, 24_TB, landrev
-	30, 16_WC, landstartrev, 320, nosid
-	30, 16_WCP, landstartrev, 320, nosid
-	40, 14_RP, landstartrev, 00, nosid
-	40, 14_RPP, landstartrev, 00, nosid		
-	40, 22_CW, landstartrev, 360, nosid
-	40, 22_CWP, landstartrev, 360, nosid
-	40, 23_MU, landstartrev, 335, nosid
-	40, 23_MUP, landstartrev, 335, nosid
-	40, 08_DB, startrev, 260, nosid	
-	40, 08_DBP, startrev, 260, nosid	
+	0, 19_TB, startrev, 035, nosid
+	0, 24_TB, landrev
+	0, 16_WC, landstartrev, 320, nosid
+	0, 16_WCP, landstartrev, 320, nosid
+	0, 14_RP, landstartrev, 00, nosid
+	0, 14_RPP, landstartrev, 00, nosid		
+	0, 22_CW, landstartrev, 360, nosid
+	0, 22_CWP, landstartrev, 360, nosid
+	0, 23_MU, landstartrev, 335, nosid
+	0, 23_MUP, landstartrev, 335, nosid
+	0, 08_DB, startrev, 260, nosid	
+	0, 08_DBP, startrev, 260, nosid	
 	
 #Foxtrot Flow  
 config6 =
@@ -4172,23 +4212,24 @@ config6 =
 	0, 04_LG, start, 035, nosid
 	0, 13_LG, landrev
 	0, dummy_LG, land
-	20, 19_TB, startrev, 035, nosid
-	20, 24_TB, landrev
-	30, 16_WC, landstartrev, 320, nosid
-	30, 16_WCP, landstartrev, 320, nosid
-	40, 14_RP, landstartrev, 00, nosid	
-	40, 14_RPP, landstartrev, 00, nosid		
-	40, 22_CW, landstartrev, 360, nosid
-	40, 22_CWP, landstartrev, 360, nosid
-	40, 23_MU, landstartrev, 335, nosid
-	40, 23_MUP, landstartrev, 335, nosid
-	40, 08_DB, startrev, 260, nosid
-	40, 08_DBP, startrev, 260, nosid		
+	0, 19_TB, startrev, 035, nosid
+	0, 24_TB, landrev
+	0, 16_WC, landstartrev, 320, nosid
+	0, 16_WCP, landstartrev, 320, nosid
+	0, 14_RP, landstartrev, 00, nosid	
+	0, 14_RPP, landstartrev, 00, nosid		
+	0, 22_CW, landstartrev, 360, nosid
+	0, 22_CWP, landstartrev, 360, nosid
+	0, 23_MU, landstartrev, 335, nosid
+	0, 23_MUP, landstartrev, 335, nosid
+	0, 08_DB, startrev, 260, nosid
+	0, 08_DBP, startrev, 260, nosid		
 
 #Golf Flow  
 config7 =
 	0, 04L_JK, landstart, 100, nosid
 	0, 04R_JK, landstart, 100, nosid
+	0, 13RB_JK, startrevintersection, 223
 	0, dummy_JK, land
 	0, 04L_JKP, landstart, 100, nosid
 	0, 04R_JKP, landstart, 100, nosid
@@ -4200,23 +4241,24 @@ config7 =
 	0, 04_LG, start, 035, nosid
 	0, 13_LG, landrev
 	0, dummy_LG, land
-	20, 19_TB, startrev, 035, nosid
-	20, 24_TB, landrev
-	30, 16_WC, landstartrev, 320, nosid
-	30, 16_WCP, landstartrev, 320, nosid
-	40, 01_RP, landstart, 00, nosid
-	40, 01_RPP, landstart, 00, nosid	
-	40, 22_CW, landstartrev, 360, nosid
-	40, 22_CWP, landstartrev, 360, nosid
-	40, 23_MU, landstartrev, 335, nosid
-	40, 23_MUP, landstartrev, 335, nosid
-	40, 08_DB, landstart, 080, nosid	
-	40, 08_DBP, landstart, 080, nosid	
+	0, 19_TB, startrev, 035, nosid
+	0, 24_TB, landrev
+	0, 16_WC, landstartrev, 320, nosid
+	0, 16_WCP, landstartrev, 320, nosid
+	0, 01_RP, landstart, 00, nosid
+	0, 01_RPP, landstart, 00, nosid	
+	0, 22_CW, landstartrev, 360, nosid
+	0, 22_CWP, landstartrev, 360, nosid
+	0, 23_MU, landstartrev, 335, nosid
+	0, 23_MUP, landstartrev, 335, nosid
+	0, 08_DB, landstart, 080, nosid	
+	0, 08_DBP, landstart, 080, nosid	
 	
 #Hotel Flow  
 config8 =
 	0, 04L_JK, landstart, 100, nosid
 	0, 04R_JK, landstart, 100, nosid
+	0, 13RB_JK, startrevintersection, 223
 	0, dummy_JK, land
 	0, 04L_JKP, landstart, 100, nosid
 	0, 04R_JKP, landstart, 100, nosid
@@ -4228,18 +4270,18 @@ config8 =
 	0, 04_LG, land
 	0, 13_LG, start, 180, nosid		
 	0, dummy_LG, land
-	20, 19_TB, startrev, 035, nosid
-	20, 24_TB, landrev
-	30, 16_WC, landstart, 320, nosid
-	30, 16_WCP, landstart, 320, nosid
-	40, 01_RP, landstart, 00, nosid
-	40, 01_RPP, landstart, 00, nosid		
-	40, 22_CW, landstartrev, 360, nosid
-	40, 22_CWP, landstartrev, 360, nosid
-	40, 23_MU, landstartrev, 335, nosid
-	40, 23_MUP, landstartrev, 335, nosid
-	40, 08_DB, landstart, 080, nosid	
-	40, 08_DBP, landstart, 080, nosid
+	0, 19_TB, startrev, 035, nosid
+	0, 24_TB, landrev
+	0, 16_WC, landstart, 320, nosid
+	0, 16_WCP, landstart, 320, nosid
+	0, 01_RP, landstart, 00, nosid
+	0, 01_RPP, landstart, 00, nosid		
+	0, 22_CW, landstartrev, 360, nosid
+	0, 22_CWP, landstartrev, 360, nosid
+	0, 23_MU, landstartrev, 335, nosid
+	0, 23_MUP, landstartrev, 335, nosid
+	0, 08_DB, landstart, 080, nosid	
+	0, 08_DBP, landstart, 080, nosid
 	
 #India Flow  
 config9 =
@@ -4257,18 +4299,18 @@ config9 =
 	0, 04_LG, land
 	0, 13_LG, start, 180, nosid		
 	0, dummy_LG, land
-	20, 19_TB, startrev, 035, nosid
-	20, 24_TB, landrev
-	30, 16_WC, landstart, 320, nosid
-	30, 16_WCP, landstart, 320, nosid
-	40, 14_RP, landstart, 220, nosid	
-	40, 14_RPP, landstart, 220, nosid
-	40, 22_CW, landstartrev, 360, nosid
-	40, 22_CWP, landstartrev, 360, nosid
-	40, 23_MU, landstartrev, 335, nosid
-	40, 23_MUP, landstartrev, 335, nosid
-	40, 08_DB, landstart, 080, nosid	
-	40, 08_DBP, landstart, 080, nosid	
+	0, 19_TB, startrev, 035, nosid
+	0, 24_TB, landrev
+	0, 16_WC, landstart, 320, nosid
+	0, 16_WCP, landstart, 320, nosid
+	0, 14_RP, landstart, 220, nosid	
+	0, 14_RPP, landstart, 220, nosid
+	0, 22_CW, landstartrev, 360, nosid
+	0, 22_CWP, landstartrev, 360, nosid
+	0, 23_MU, landstartrev, 335, nosid
+	0, 23_MUP, landstartrev, 335, nosid
+	0, 08_DB, landstart, 080, nosid	
+	0, 08_DBP, landstart, 080, nosid	
 	
 #Juliet Flow  
 config10 =
@@ -4285,18 +4327,18 @@ config10 =
 	0, dummy_NK, landrev
 	0, 13_LG, startland, 180, nosid
 	0, dummy_LG, land
-	20, 19_TB, land
-	20, 24_TB, start, 283, nosid
-	30, 16_WC, landstart, 320, nosid
-	30, 16_WCP, landstart, 320, nosid
-	40, 14_RP, landstart, 220, nosid	
-	40, 14_RPP, landstart, 220, nosid
-	40, 23_MU, landstart, 160, nosid
-	40, 23_MUP, landstart, 160, nosid
-	40, 22_CW, landstart, 180, nosid
-	40, 22_CWP, landstart, 180, nosid
-	40, 08_DB, landstart, 080, nosid
-	40, 08_DBP, landstart, 080, nosid
+	0, 19_TB, land
+	0, 24_TB, start, 283, nosid
+	0, 16_WC, landstart, 320, nosid
+	0, 16_WCP, landstart, 320, nosid
+	0, 14_RP, landstart, 220, nosid	
+	0, 14_RPP, landstart, 220, nosid
+	0, 23_MU, landstart, 160, nosid
+	0, 23_MUP, landstart, 160, nosid
+	0, 22_CW, landstart, 180, nosid
+	0, 22_CWP, landstart, 180, nosid
+	0, 08_DB, landstart, 080, nosid
+	0, 08_DBP, landstart, 080, nosid
 	
 #Kilo Flow  
 config11 =
@@ -4314,23 +4356,24 @@ config11 =
 	0, 04_LG, landrev
 	0, 13_LG, start, 180, nosid	
 	0, dummy_LG, land
-	20, 19_TB, land
-	20, 24_TB, start, 283, nosid
-	30, 16_WC, landstart, 320, nosid
-	30, 16_WCP, landstart, 320, nosid
-	40, 14_RP, landstart, 220, nosid	
-	40, 14_RPP, landstart, 220, nosid
-	40, 23_MU, landstart, 160, nosid
-	40, 23_MUP, landstart, 160, nosid
-	40, 22_CW, landstart, 180, nosid
-	40, 22_CWP, landstart, 180, nosid
-	40, 08_DB, landstart, 080, nosid
-	40, 08_DBP, landstart, 080, nosid
+	0, 19_TB, land
+	0, 24_TB, start, 283, nosid
+	0, 16_WC, landstart, 320, nosid
+	0, 16_WCP, landstart, 320, nosid
+	0, 14_RP, landstart, 220, nosid	
+	0, 14_RPP, landstart, 220, nosid
+	0, 23_MU, landstart, 160, nosid
+	0, 23_MUP, landstart, 160, nosid
+	0, 22_CW, landstart, 180, nosid
+	0, 22_CWP, landstart, 180, nosid
+	0, 08_DB, landstart, 080, nosid
+	0, 08_DBP, landstart, 080, nosid
 	
 #Lima Flow  
 config12 =
 	0, 04L_JK, landstartrev, 220, nosid
 	0, 04R_JK, landrev
+	0, 13RB_JK, startrevintersection, 223
 	0, dummy_JK, landrev
 	0, 04L_JKP, landstartrev, 220, nosid
 	0, 04R_JKP, landrev
@@ -4342,18 +4385,18 @@ config12 =
 	0, 04_LG, landrev
 	0, 13_LG, start, 180, nosid		
 	0, dummy_LG, land
-	20, 19_TB, land
-	20, 24_TB, start, 283, nosid
-	30, 16_WC, landstart, 320, nosid
-	30, 16_WCP, landstart, 320, nosid
-	40, 01_RP, landstartrev, 220, nosid	
-	40, 01_RPP, landstartrev, 220, nosid	
-	40, 23_MU, landstart, 160, nosid
-	40, 23_MUP, landstart, 160, nosid
-	40, 22_CW, landstart, 180, nosid
-	40, 22_CWP, landstart, 180, nosid
-	40, 08_DB, startrev, 260, nosid
-	40, 08_DBP, startrev, 260, nosid	
+	0, 19_TB, land
+	0, 24_TB, start, 283, nosid
+	0, 16_WC, landstart, 320, nosid
+	0, 16_WCP, landstart, 320, nosid
+	0, 01_RP, landstartrev, 220, nosid	
+	0, 01_RPP, landstartrev, 220, nosid	
+	0, 23_MU, landstart, 160, nosid
+	0, 23_MUP, landstart, 160, nosid
+	0, 22_CW, landstart, 180, nosid
+	0, 22_CWP, landstart, 180, nosid
+	0, 08_DB, startrev, 260, nosid
+	0, 08_DBP, startrev, 260, nosid	
 
 #JFK = 1200 flights/day (1) 	20	2
 #EWR = 1200 flights/day	(1)		20	2
